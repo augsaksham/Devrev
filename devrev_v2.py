@@ -27,10 +27,10 @@ combines the 100,000 questions in SQuAD1.1 with over 50,000 unanswerable questio
  also determine when no answer is supported by the paragraph and abstain from answering.
 """
 
-_URL = "https://rajpurkar.github.io/SQuAD-explorer/dataset/"
+_URL = "https://github.com/augsaksham/Devrev/"
 _URLS = {
-    "train": _URL + "train-v2.0.json",
-    "dev": _URL + "dev-v2.0.json",
+    "train": _URL + "test.json",
+    "dev": _URL + "dev.json",
 }
 
 
@@ -79,7 +79,7 @@ class SquadV2(datasets.GeneratorBasedBuilder):
             # builder.as_dataset.
             supervised_keys=None,
             # Homepage of the dataset for documentation
-            homepage="https://rajpurkar.github.io/SQuAD-explorer/",
+            homepage="https://github.com/augsaksham/Devrev/",
             citation=_CITATION,
             task_templates=[
                 QuestionAnsweringExtractive(
